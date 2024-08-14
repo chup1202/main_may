@@ -165,17 +165,29 @@ if (x !== 0) {
     console.log('НЕвірно')
 }
 
-let a = 1
+// let a = 1
+//
+// if (a === 0) {
+//     console.log(a = 0)
+// } else if (a === 1) {
+//     console.log(a = 1)
+// } else if (a === -3) {
+//     console.log(a = -3)
+// } else {
+//     console.log('????')
+// }
 
-if (a === 0) {
-    console.log(a = 0)
-} else if (a === 1) {
-    console.log(a = 1)
-} else if (a === -3) {
-    console.log(a = -3)
-} else {
-    console.log('????')
+
+if (x === 1){
+    console.log(x===1)
 }
+else if (x === 0){
+    console.log(x===0)
+}
+else if (x === -3){
+    console.log(x=== -3)
+}
+
 
 
 // Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
