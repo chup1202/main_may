@@ -51,7 +51,7 @@ console.log(evenArr);
 
 
 let idSort = emptyArr.sort((user1, user2) => {
-    return user1 - user2;
+    return user1.id - user2.id;
 })
 console.log(idSort);
 
