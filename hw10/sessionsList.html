@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sessions List</title>
+</head>
+<body>
+
+<ul id="sessions"></ul>
+
+<script>
+    const sessionsList = JSON.parse(localStorage.getItem('sessionsList')) || [];
+
+    const sessionsUl = document.getElementById('sessions');
+
+    sessionsList.forEach(session => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `Дата та час відвідування: ${session}`;
+        sessionsUl.appendChild(listItem);
+    });
+</script>
+
+</body>
+</html>
