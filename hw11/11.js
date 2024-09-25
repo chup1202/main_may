@@ -59,12 +59,12 @@ fetch('https://dummyjson.com/recipes')
 
 
             recipe.ingredients.forEach(ingredient => {
-                ingredientsList += `- ${ingredient}\n`;
+                ingredientsList += `\n- ${ingredient}\n`;
             });
 
 
             recipe.instructions.forEach(instruction => {
-                instructions += `- ${instruction}\n`
+                instructions += `\n- ${instruction}\n`
             })
 
             recipe.mealType.forEach(meal => {
@@ -85,7 +85,7 @@ fetch('https://dummyjson.com/recipes')
                 cuisine:${recipe.cuisine}
                 difficulty:${recipe.difficulty}
                 id:${recipe.id}
-                
+           
                 ingredients:${ingredientsList}
                 instructions:${instructions}
                 mealType:${mealArr}
